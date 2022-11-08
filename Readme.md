@@ -33,12 +33,12 @@ Flow Design
 
 2. File Descriptions
 
-- secret.yml: it stores the sensitive variables for kubernetes. Kubernetes in secrets store the variables in base64 encoding.
+- _secret.yml_: it stores the sensitive variables for kubernetes. Kubernetes in secrets store the variables in base64 encoding.
 
   To convert your varibales into base64, you can use the terminal and run the command:
 
   `$echo -n variable | base64`
 
-- configmap.yml: configmap is used to store common variable used top reference each places. It is always useful to apply secret and configmaps before dployment of kubernetes deployment files so that the variables can be referenced.
-- mongodb-deplyoment.yml: It consists of the mongodb database.
-- mongo-express-deployment.yml: consists of mong-express container and its service open on port 30000
+- _configmap.yml_: configmap is used to store common variable used top reference each places. It is always useful to apply secret and configmaps before dployment of kubernetes deployment files so that the variables can be referenced.
+- _mongodb-deplyoment.yml_: It consists of the mongodb database.
+- _mongo-express-deployment.yml_: consists of mong-express container and its service open on port 30000
